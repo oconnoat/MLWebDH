@@ -2,6 +2,16 @@ h1, h3.panel-title{
     font-family: 'Satisfy', cursive; font-size: 150%;
 }
 
+
+/* Per-slide backgrounds */
+.impress-on-humanities {
+    background: url(../img/little_visuals_white_church.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+}
 .impress-on-whatsdigital {
     background: url(../img/little_visuals_over.jpg) no-repeat center center fixed; 
     background-repeat: no-repeat;
