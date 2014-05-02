@@ -1,28 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+    <meta content="width=1024" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+
     <title></title>
-    
-    <meta name="description" content="" />
-    <meta name="author" content="Alexander O'Connor" />
-
-    <!-- google font link -->
-    <link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
-
-    <!-- impress-demo basics for slide layout etc-->
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    <!-- bootflat css -->
-    <link href="css/bootflat.min.css" rel="stylesheet" />
-    <!-- custom CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    
-</head>
-
-<!--
+    <meta content="" name="description">
+    <meta content="Alexander O'Connor" name="author"><!-- google font link -->
+    <link href="http://fonts.googleapis.com/css?family=Satisfy" rel=
+    "stylesheet"><!-- impress-demo basics for slide layout etc-->
+    <link href="css/impress-demo.css" rel="stylesheet"><!-- bootflat css -->
+    <link href="css/bootflat.min.css" rel="stylesheet"><!-- custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head><!--
     
     Body element is used by impress.js to set some useful class names, that will allow you to detect
     the support and state of the presentation in CSS or other scripts.
@@ -40,9 +32,9 @@
     it can be found later, when `hint` element is being described.
     
 -->
-<body>
 
-   <!-- 
+<body>
+    <!-- 
     Now that's the core element used by impress.js.
     
     That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
@@ -61,246 +53,518 @@
     But as I said, you won't need it for now, so don't worry - there are some simple but interesing things
     right around the corner of this tag ;)
     
--->
-<div id="impress">
+    -->
 
-    <div id="title" class="step slide" data-x="0" data-y="0">
-        <h1>Marking Up Our Virtue</h1>
-        <h2>Multilingual Standards and Practices in the Digital Humanities</h2>
-        <h3><a href="mailto:Alex.OConnor@scss.tcd.ie">Alexander O'Connor</a>, <a href="http://www.cngl.ie">http://www.cngl.ie</a></h3>
-        <h3><a href="http://www.twitter.com/uberalex/">@uberalex</a></h3>
-    </div>
+    <div id="impress">
+        <div class="step slide" data-x="0" data-y="0" id="title">
+            <h1>Marking Up Our Virtue</h1>
 
-    <div id="humanities" class="step slide" data-x="1000" data-y="0" data-z="0">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Defining the Humanities</h3>
-            </div>
-            <div class="panel-body">
-                <p> Slide 1 Text</p>
+            <h2>Multilingual Standards and Practices in the Digital
+            Humanities</h2>
+
+            <h3><a href="mailto:Alex.OConnor@scss.tcd.ie">Alexander
+            O'Connor</a>, <a href=
+            "http://www.cngl.ie">http://www.cngl.ie</a></h3>
+
+            <h3><a href="http://www.twitter.com/uberalex/">@uberalex</a></h3>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="0" data-z="0" id=
+        "humanities">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Defining the Humanities</h3>
+                </div>
+
+                <div class="panel-body">
+                    <blockquote>The division of knowledge into ‘science,’ ‘social science,’ and ‘the humanities’ is deeply entrenched in ways of thinking prevailing in the English-speaking world and is reflected in many institutional structures.<br />
+                    &mdash;<a href="http://cap.sagepub.com/content/17/1/31.short">Anna Wierzbicka, 2011</a></blockquote>
+                </div>
             </div>
         </div>
-    </div>
-   <div id="whatsdigital" class="step slide" data-x="2000" data-y="0" data-z="0">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">What is Digital about it, anyway?</h3>
-            </div>
-            <div class="panel-body">
-                   <span id="CCEAISD"><a href="https://github.com/dhtaxonomy/TaDiRAH">Capture, Creation, Enrichment, Analysis, Interpretation, Storage, Dissemination</a></span>
-                    <ul> 
-                        <li><a href="http://computerphilologie.tu-darmstadt.de/jg02/unsworth.html">Unsworth 'What is Humanities Computing and What is it Not?'</a></li>
-                        <li><a href="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</a></li>
+
+        <div class="step slide" data-x="2000" data-y="0" data-z="0" id=
+        "whatsdigital">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">What is Digital about it,
+                    anyway?</h3>
+                </div>
+
+                <div class="panel-body">
+                    <h3>Is it Digital Humanities if I emailed it as a PDF?</h3>
+                    <div class="floater">
+                        <ul>
+                        <li>Source<a href=
+                            "https://github.com/dhtaxonomy/TaDiRAH">TaDiRAH</a></li>
+                        <li>Capture, Creation, Enrichment</li>
+                        <li>Analysis, Interpretation</li> 
+                        <li>Storage, Dissemination</li>
+                    </ul>
+                    </div>
+                    <div class="floater">
+                    <ul>
+                        <li><a href="http://www.digitalhumanities.org/companion/">
+                            'A Companion to Digital Humanities', ed. Susan Schreibman, Ray Siemens, John Unsworth. Oxford: Blackwell, 2004
+                        </a></li>
+                        <li><a href=
+                        "http://computerphilologie.tu-darmstadt.de/jg02/unsworth.html">
+                        Unsworth 'What is Humanities Computing and What is it
+                        Not?'</a></li>
+
+                        <li><a href=
+                        "http://dhdebates.gc.cuny.edu/">'Debates in the Digital Humanities', ed. Gold</a></li>
                     </ul>
                 </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="applications" class="step slide" data-x="3000" data-y="0" data-z="0">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3>Some popular areas right now</h3>
+
+        <div class="step slide" data-x="3000" data-y="0" data-z="0" id=
+        "applications">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Some popular areas right now</h3>
+                </div>
+                <div class="panel-body">
+                    <a href="http://www.scottbot.net/HIAL/?p=40695">Based on Scott
+                        Weingart's Analysis of the DH2014 Acceptances by
+                        Topic:</a>
+                    <ul>
+                        <li>Text Analysis</li> 
+                        <li>Literary Analysis</li>
+                        <li>Archives &amp; Repositories</li> 
+                        <li>Data Mining / Text Mining</li> 
+                        <li>Visualisation</li>
+                    </ul>
+                </div>
             </div>
-            <div class="panel-body">
-                <a href="http://www.scottbot.net/HIAL/?p=40695">Based on Scott Weingart's Analysis of the DH2014 Acceptances by Topic:</a>
-                <ul>
-                    <li>Text Analysis</li>
-                    <li>Literary Analysis</li>
-                    <li>Archives &amp; Repositories</li> 
-                    <li>Data Mining / Text Mining</li>
-                    <li>Visualisation</li>
-                </ul>
+        </div><!-- Data, Markup, Knowledge -->
+
+        <div class="step slide" data-x="1000" data-y="1000" data-z="0" id=
+        "Data">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Digital Artefacts</h3>
+                </div>
+
+                <div class="panel-body">
+                    <ul>
+                        <li>Manuscripts</li>
+
+                        <li>Books</li>
+
+                        <li>Film</li>
+
+                        <li>Diaries</li>
+
+                        <li>Archaeological finds</li>
+
+                        <li>Secondary Sources</li>
+                    </ul>
+                </div>
             </div>
-    <!-- Data, Markup, Knowledge -->
-  <div id="Data" class="step slide" data-x="1000" data-y="1000" data-z="0">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Digital Artefacts</h3>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    <li>Manuscripts</li>
-                    <li>Books</li>
-                    <li>Film</li>
-                    <li>Diaries</li>
-                    <li>Archaeological finds</li>
-                    <li>Secondary Sources</li>
-                </ul>
         </div>
-        </div>
-    </div>
-    <div id="Cultura" class="step slide" data-x="1000" data-y="1000" data-z="-1000" data-rotate-x="90">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">A Deposition from the 1641 Collection at TCD</h3>
-            </div>
-            <div class="panel-body">
-                <div style="width:40%; float: left;">
-                    <a href="http://cultura-project.eu/1641/?q=deposition/809005r002"><img src="img/deposition.png" alt="deposition" /></a>
-                    <a href="http://www.cultura-strep.eu">Source: http://cultura-strp.eu/</a>
-                </div> 
-                <div style="width:50%; float: right;">
+
+        <div class="step slide" data-rotate-x="90" data-x="1000" data-y="1000"
+        data-z="-1000" id="Cultura">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Which one is the Artefact?</h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="floater">
                     <ul>
                         <li>Image of the Original Document</li>
+
                         <li>Manual Transcription of the Document</li>
-                        <li>Normalised and processed html text of the document</li>
-                        <li>Associated metadata describing the peopple, places, entities</li>
+
+                        <li>Normalised and processed html text of the
+                        document</li>
+
+                        <li>Associated metadata describing the peopple,
+                        places, entities</li>
                     </ul>
-                </div>
-                    <p><strong>Which one is the Artefact?</strong></p>
+                    </div>
+                    <div class="floater">
+                        <a href=
+                        "http://cultura-project.eu/1641/?q=deposition/809005r002">
+                        <img alt="deposition" src="img/deposition.png"></a>
+                    <a href="http://www.cultura-project.eu"><br />Source:
+                        http://cultura-project.eu/</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  <div id="Markup" class="step slide" data-x="2000" data-y="1000" data-z="0">
+
+    <div class="step slide" data-x="2000" data-y="1000" data-z="0" id="Markup">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">Items &amp; Collections</h3>
+                <h3 class="panel-title">Markup, Items &amp; Collections</h3>
             </div>
+
             <div class="panel-body">
-                <p>Libraries tend to deal with Items</p>
-                <p>Archives tend to deal with collections.</p>
-                <p>The collection, the archive or the item itself might no longer exist: evidence only in metadata.</p>
-            </div>
-        </div>
-    </div>
-    <div id="Cendari" class="step slide" data-x="2000" data-y="1000" data-z="1000" data-rotate-x="90">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Cendari Archive Catalogue &amp; Research Guides</h3>
-            </div>
-            <div class="panel-body">
-                <div style="float:left; width:45%;">
+                <div>
+                    <h3>Mark up...</h3>
                     <ul>
-                        <li>Hidden Archives</li>
-                        <li>Secondary Works</li>
-                        <li>Existing Databases</li>
-                        <li>Scholars' personal data</li>
-                        <li>Accessing the physical</li>
+                        <li>Libraries tend to deal with <strong>Items</strong></li>
+                        <li>Archives tend to deal with <strong>collections</strong></li>
+                        <li>The collection, the archive or the item itself might no
+                longer exist: evidence only in metadata.</li>
                     </ul>
-                </div>
             </div>
-                <div style="float:left; width:45%;">
-                    <a href="https://wiki.cendari.dariah.eu/wiki/The_Fall_of_the_House_Romanov_(Demonstrator_ARG)"><img src="img/cendariarg.png"></a>
-                </div>
+            <div>
+                <h3>...to find...</h3>
+            <ul>
+                    <li>Entities</li>
+                    <li>Linguistic Elements</li>
+                    <li>Physical Properties</li>
+                    <li>Editorial Notes</li>
+                </ul>
+            </div>
+            </div>
         </div>
     </div>
 
- <div id="Knowledge" class="step slide" data-x="3000" data-y="1000" data-z="0">
+    <div class="step slide" data-rotate-x="90" data-x="2000" data-y="1000"
+    data-z="2000" id="Cendari">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cendari Archive Catalogue &amp;
+                Research Guides</h3>
+            </div>
+        </div>
+        <div class="panel-body"> 
+
+        <div class="floater">
+            <ul>
+                <li>Hidden Archives</li>
+
+                <li>Secondary Works</li>
+
+                <li>Existing Databases</li>
+
+                <li>Scholars' personal data</li>
+
+                <li>Accessing the physical</li>
+            </ul>
+        </div>
+
+        <div class="floater">
+            <a href=
+            "https://wiki.cendari.dariah.eu/wiki/The_Fall_of_the_House_Romanov_(Demonstrator_ARG)">
+            <img src="img/cendariarg.png"></a>
+        </div>
+    </div>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="1000" data-z="0" id=
+    "Knowledge">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Entities, Ontologies and Knowledge</h3>
             </div>
+
             <div class="panel-body">
                 <ul>
-                    <li>DBPedia: Notability in thr context of crowd-sourcing?</li>
-                    <li>VIAF, <a href="http://pro.europeana.eu/edm-documentation">EDM</a>,<a href="http://www.loc.gov/bibframe/docs/model.html">Bibframe</a></li>
-                    <li>Feasibility of automation in archaic languages/language forms and highly irregular content?</li>
+                    <li>DBPedia: Notability in thr context of
+                    crowd-sourcing?</li>
+
+                    <li>VIAF, <a href=
+                    "http://pro.europeana.eu/edm-documentation">EDM</a>,<a href="http://www.loc.gov/bibframe/docs/model.html">Bibframe</a></li>
+
+                    <li>Feasibility of automation in archaic languages/language
+                    forms and highly irregular content?</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div id="Gdansk" class="step slide" data-x="3000" data-y="2000" data-z="-1000" data-rotate-y="90">
+
+    <div class="step slide" data-rotate-y="90" data-x="3000" data-y="2000"
+    data-z="-1000" id="Gdansk">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Naming a City</h3>
             </div>
+
             <div class="panel-body">
-<div id="nametable" style="width: 40%; max-width: 50%; float:left;">
-<div style="background-color: #B0C4DE; color: black; font-weight: bold;">
-    Historical Names</div>
-<table style="background-color: #B0C4DE;">
-    <tr><th>Name</th><th>Year</th></tr>
-    <tr><td>Vicus Theutonicus</td><td>1227</td></tr>
-    <tr><td>Civitas Gedanensi</td><td>1236</td></tr>
-    <tr><td>Civitas Danczik</td><td>1236</td></tr>
-    <tr><td>Burgum Dantzike</td><td>1299</td></tr>
-    <tr><td>Rechtestadt Danczk</td><td>1420</td></tr>
-    <tr><td>Danzig</td><td>(modern German)</td></tr>
-    <tr><td>Gdańsk</td><td>(modern Polish)</td></tr>
-    <tr><td colspan="2" style="border-top: 1px solid; font-size: 80%; font-style:italic;">Source: <a href="http://www.kartenmeister.com/preview/City.asp?CitNum=6343">http://www.kartenmeister.com/preview/City.asp?CitNum=6343</a></td></tr>
-</table>
-</div>
-</div>
-<div id="affiliations" style="max-width: 50%; float:left; margin-left: 1%; margin-top: -1%;"> 
-<div class="quotebox" style="float: left; clear: left; margin: 0.5em 1.4em 0.8em 0; width: 22em; padding: 6px; border: 1px solid #aaa; font-size: 90%; background-color: #B0C4DE;">
-<div style="background-color: #B0C4DE; color: black; text-align: center; font-size: larger; font-weight: bold;">Historical affiliations</div>
-<div style="position: relative; text-align: left;">
-<div>
-<p><span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png" width="13" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/19px-POL_Przemys%C5%82_II_1295_COA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/25px-POL_Przemys%C5%82_II_1295_COA.svg.png 2x" data-file-width="628" data-file-height="739"></span> <a href="/wiki/Kingdom_of_Poland_(1025%E2%80%931385)" title="Kingdom of Poland (1025–1385)">Kingdom of Poland</a> 997–1227<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/POL_wojew%C3%B3dztwo_pomorskie_COA.svg/12px-POL_wojew%C3%B3dztwo_pomorskie_COA.svg.png" width="12" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/POL_wojew%C3%B3dztwo_pomorskie_COA.svg/19px-POL_wojew%C3%B3dztwo_pomorskie_COA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/POL_wojew%C3%B3dztwo_pomorskie_COA.svg/24px-POL_wojew%C3%B3dztwo_pomorskie_COA.svg.png 2x" data-file-width="742" data-file-height="910"></span> <a href="/wiki/Pomerelia" title="Pomerelia">Duchy of Pomerelia</a> 1227–1294<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png" width="13" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/19px-POL_Przemys%C5%82_II_1295_COA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/25px-POL_Przemys%C5%82_II_1295_COA.svg.png 2x" data-file-width="628" data-file-height="739"></span> <a href="/wiki/Kingdom_of_Poland_(1025%E2%80%931385)" title="Kingdom of Poland (1025–1385)">Kingdom of Poland</a> 1294–1308<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Teuton-jelv%C3%A9ny.png/14px-Teuton-jelv%C3%A9ny.png" width="14" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Teuton-jelv%C3%A9ny.png/21px-Teuton-jelv%C3%A9ny.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Teuton-jelv%C3%A9ny.png/27px-Teuton-jelv%C3%A9ny.png 2x" data-file-width="694" data-file-height="768"></span> <a href="/wiki/State_of_the_Teutonic_Order" title="State of the Teutonic Order">Teutonic Order</a> 1308–1466<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png" width="13" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/19px-POL_Przemys%C5%82_II_1295_COA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/25px-POL_Przemys%C5%82_II_1295_COA.svg.png 2x" data-file-width="628" data-file-height="739"></span> <a href="/wiki/Kingdom_of_Poland_(1385%E2%80%931569)" title="Kingdom of Poland (1385–1569)">Kingdom of Poland</a> 1466–1569<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg/23px-Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg.png" width="23" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg/35px-Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg/45px-Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg.png 2x" data-file-width="900" data-file-height="600"></span> <a href="/wiki/Polish%E2%80%93Lithuanian_Commonwealth" title="Polish–Lithuanian Commonwealth">Polish–Lithuanian Commonwealth</a> 1569–1793<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/23px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png" width="23" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/35px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/45px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png 2x" data-file-width="1500" data-file-height="1000"></span> <a href="/wiki/Prussia" title="Prussia">Prussia</a> 1793–1807<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/20px-Gdansk_flag.svg.png" width="20" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/31px-Gdansk_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/40px-Gdansk_flag.svg.png 2x" data-file-width="800" data-file-height="600"></span> <a href="/wiki/Free_City_of_Danzig_(Napoleonic)" title="Free City of Danzig (Napoleonic)">Free City of Danzig</a> 1807–1814<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/23px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png" width="23" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/35px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/45px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png 2x" data-file-width="1500" data-file-height="1000"></span> <a href="/wiki/Prussia" title="Prussia">Prussia</a> 1814–1871<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_the_German_Empire.svg/23px-Flag_of_the_German_Empire.svg.png" width="23" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_the_German_Empire.svg/35px-Flag_of_the_German_Empire.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_the_German_Empire.svg/45px-Flag_of_the_German_Empire.svg.png 2x" data-file-width="1200" data-file-height="800"></span> <a href="/wiki/German_Empire" title="German Empire">German Empire</a> 1871–1918<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png" width="23" height="14" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/46px-Flag_of_Germany.svg.png 2x" data-file-width="1000" data-file-height="600"></span> <a href="/wiki/Weimar_Germany" title="Weimar Germany" class="mw-redirect">Weimar Germany</a> 1918–1920<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/20px-Gdansk_flag.svg.png" width="20" height="15" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/31px-Gdansk_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/40px-Gdansk_flag.svg.png 2x" data-file-width="800" data-file-height="600"></span> <a href="/wiki/Free_City_of_Danzig" title="Free City of Danzig">Free City of Danzig</a> 1920–1939<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_German_Reich_%281935%E2%80%931945%29.svg/23px-Flag_of_German_Reich_%281935%E2%80%931945%29.svg.png" width="23" height="14" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_German_Reich_%281935%E2%80%931945%29.svg/35px-Flag_of_German_Reich_%281935%E2%80%931945%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_German_Reich_%281935%E2%80%931945%29.svg/46px-Flag_of_German_Reich_%281935%E2%80%931945%29.svg.png 2x" data-file-width="1000" data-file-height="600"></span> <a href="/wiki/Nazi_Germany" title="Nazi Germany">Nazi Germany</a> 1939–1945<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png" width="23" height="14" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/35px-Flag_of_Poland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/46px-Flag_of_Poland.svg.png 2x" data-file-width="1280" data-file-height="800"></span> <a href="/wiki/People%27s_Republic_of_Poland" title="People's Republic of Poland" class="mw-redirect">People's Republic of Poland</a> 1945–1989<br>
-<span class="flagicon"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png" width="23" height="14" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/35px-Flag_of_Poland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/46px-Flag_of_Poland.svg.png 2x" data-file-width="1280" data-file-height="800">&nbsp;</span><a href="/wiki/Poland" title="Poland">Republic of Poland</a> 1989–present</p>
-</div>
-<span style="font-size: 90%; font-style:italic;">Source: <a href="http://en.wikipedia.org/wiki/Gdansk">http://en.wikipedia.org/wiki/Gdansk</a></span>
-</div>
-</div>
-</div>
+                <div id="nametable" style=
+                "width: 40%; max-width: 50%; float:left;">
+                    <div style=
+                    "background-color: #B0C4DE; color: black; font-weight: bold;">
+                    Historical Names
+                    </div>
 
-   <!-- Language, Standards and Infrastructure -->
+                    <table style="background-color: #B0C4DE;">
+                        <tr>
+                            <th>Name</th>
 
-<div id="Standards" class="step slide" data-x="1000" data-y="3000" data-z="0">
+                            <th>Year</th>
+                        </tr>
+
+                        <tr>
+                            <td>Vicus Theutonicus</td>
+
+                            <td>1227</td>
+                        </tr>
+
+                        <tr>
+                            <td>Civitas Gedanensi</td>
+
+                            <td>1236</td>
+                        </tr>
+
+                        <tr>
+                            <td>Civitas Danczik</td>
+
+                            <td>1236</td>
+                        </tr>
+
+                        <tr>
+                            <td>Burgum Dantzike</td>
+
+                            <td>1299</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rechtestadt Danczk</td>
+
+                            <td>1420</td>
+                        </tr>
+
+                        <tr>
+                            <td>Danzig</td>
+
+                            <td>(modern German)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gdańsk</td>
+
+                            <td>(modern Polish)</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style=
+                            "border-top: 1px solid; font-size: 80%; font-style:italic;">
+                            Source: <a href=
+                            "http://www.kartenmeister.com/preview/City.asp?CitNum=6343">
+                            http://www.kartenmeister.com/preview/City.asp?CitNum=6343</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="affiliations" style=
+                "max-width: 50%; float:left; margin-left: 1%; margin-top: -1%;">
+                <div class="quotebox" style=
+                "float: left; clear: left; margin: 0.5em 1.4em 0.8em 0; width: 22em; padding: 6px; border: 1px solid #aaa; font-size: 90%; background-color: #B0C4DE;">
+                    <div style=
+                    "background-color: #B0C4DE; color: black; text-align: center; font-size: larger; font-weight: bold;">
+                        Historical affiliations
+                        </div>
+
+                        <div style="position: relative; text-align: left;">
+                            <div>
+                                <p><span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="739"
+                                data-file-width="628" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png"
+                                width="13"></span> <a href=
+                                "/wiki/Kingdom_of_Poland_(1025%E2%80%931385)"
+                                title="Kingdom of Poland (1025–1385)">Kingdom
+                                of Poland</a> 997–1227<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="910"
+                                data-file-width="742" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/POL_wojew%C3%B3dztwo_pomorskie_COA.svg/12px-POL_wojew%C3%B3dztwo_pomorskie_COA.svg.png"
+                                width="12"></span> <a href="/wiki/Pomerelia"
+                                title="Pomerelia">Duchy of Pomerelia</a>
+                                1227–1294<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="739"
+                                data-file-width="628" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png"
+                                width="13"></span> <a href=
+                                "/wiki/Kingdom_of_Poland_(1025%E2%80%931385)"
+                                title="Kingdom of Poland (1025–1385)">Kingdom
+                                of Poland</a> 1294–1308<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="768"
+                                data-file-width="694" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Teuton-jelv%C3%A9ny.png/14px-Teuton-jelv%C3%A9ny.png"
+                                width="14"></span> <a href=
+                                "/wiki/State_of_the_Teutonic_Order" title=
+                                "State of the Teutonic Order">Teutonic
+                                Order</a> 1308–1466<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="739"
+                                data-file-width="628" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/POL_Przemys%C5%82_II_1295_COA.svg/13px-POL_Przemys%C5%82_II_1295_COA.svg.png"
+                                width="13"></span> <a href=
+                                "/wiki/Kingdom_of_Poland_(1385%E2%80%931569)"
+                                title="Kingdom of Poland (1385–1569)">Kingdom
+                                of Poland</a> 1466–1569<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="600"
+                                data-file-width="900" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg/23px-Chor%C4%85giew_kr%C3%B3lewska_kr%C3%B3la_Zygmunta_III_Wazy.svg.png"
+                                width="23"></span> <a href=
+                                "/wiki/Polish%E2%80%93Lithuanian_Commonwealth"
+                                title=
+                                "Polish–Lithuanian Commonwealth">Polish–Lithuanian
+                                Commonwealth</a> 1569–1793<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="1000"
+                                data-file-width="1500" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/23px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png"
+                                width="23"></span> <a href="/wiki/Prussia"
+                                title="Prussia">Prussia</a> 1793–1807<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="600"
+                                data-file-width="800" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/20px-Gdansk_flag.svg.png"
+                                width="20"></span> <a href=
+                                "/wiki/Free_City_of_Danzig_(Napoleonic)" title=
+                                "Free City of Danzig (Napoleonic)">Free City of
+                                Danzig</a> 1807–1814<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="1000"
+                                data-file-width="1500" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg/23px-Flag_of_the_Kingdom_of_Prussia_%281750-1801%29.svg.png"
+                                width="23"></span> <a href="/wiki/Prussia"
+                                title="Prussia">Prussia</a> 1814–1871<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="800"
+                                data-file-width="1200" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_the_German_Empire.svg/23px-Flag_of_the_German_Empire.svg.png"
+                                width="23"></span> <a href=
+                                "/wiki/German_Empire" title=
+                                "German Empire">German Empire</a> 1871–1918<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="600"
+                                data-file-width="1000" height="14" src=
+                                "//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png"
+                                width="23"></span> <a class="mw-redirect" href=
+                                "/wiki/Weimar_Germany" title=
+                                "Weimar Germany">Weimar Germany</a>
+                                1918–1920<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="600"
+                                data-file-width="800" height="15" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gdansk_flag.svg/20px-Gdansk_flag.svg.png"
+                                width="20"></span> <a href=
+                                "/wiki/Free_City_of_Danzig" title=
+                                "Free City of Danzig">Free City of Danzig</a>
+                                1920–1939<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="600"
+                                data-file-width="1000" height="14" src=
+                                "//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_German_Reich_%281935%E2%80%931945%29.svg/23px-Flag_of_German_Reich_%281935%E2%80%931945%29.svg.png"
+                                width="23"></span> <a href="/wiki/Nazi_Germany"
+                                title="Nazi Germany">Nazi Germany</a>
+                                1939–1945<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="800"
+                                data-file-width="1280" height="14" src=
+                                "//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png"
+                                width="23"></span> <a class="mw-redirect" href=
+                                "/wiki/People%27s_Republic_of_Poland" title=
+                                "People's Republic of Poland">People's Republic
+                                of Poland</a> 1945–1989<br>
+                                <span class="flagicon"><img alt="" class=
+                                "thumbborder" data-file-height="800"
+                                data-file-width="1280" height="14" src=
+                                "//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png"
+                                width="23">&nbsp;</span><a href="/wiki/Poland"
+                                title="Poland">Republic of Poland</a>
+                                1989–present</p>
+                            </div><span style=
+                            "font-size: 90%; font-style:italic;">Source:
+                            <a href=
+                            "http://en.wikipedia.org/wiki/Gdansk">http://en.wikipedia.org/wiki/Gdansk</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Language, Standards and Infrastructure -->
+
+    <div class="step slide" data-x="1000" data-y="3000" data-z="0" id=
+    "Standards">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Standards</h3>
             </div>
+
             <div class="panel-body">
                 <ul>
-                    <li><a href="http://www.openarchives.org/pmh/">OAI-PMH</a></li>
-                    <li><a href="http://www.loc.gov/standards/mods/">MODS</a></li>
+                    <li><a href=
+                    "http://www.openarchives.org/pmh/">OAI-PMH</a></li>
+
+                    <li><a href=
+                    "http://www.loc.gov/standards/mods/">MODS</a></li>
+
                     <li><a href="http://www.tei-c.org">TEI</a></li>
+
                     <li><strong>Legacy Schemas and Software</strong></li>
                 </ul>
             </div>
         </div>
-        </div>
     </div>
-</div>
-<div id="Language" class="step slide" data-x="2000" data-y="3000" data-z="0">
+
+    <div class="step slide" data-x="2000" data-y="3000" data-z="0" id=
+    "Language">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Items &amp; Collections</h3>
             </div>
+
             <div class="panel-body">
-               http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD41 
+                http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD41
             </div>
         </div>
     </div>
-</div>
-<div id="Infrastructure" class="step slide" data-x="3000" data-y="3000" data-z="0">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Research Landscape</h3>
+
+    <div class="step slide" data-x="3000" data-y="3000" data-z="0" id=
+    "Infrastructure">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Research Landscape</h3>
+            </div>
+
+            <div class="panel-body">
+                <a href=
+                "http://www.cendari.eu/description-of-work/project-information-resources/the-digital-humanities-landscape-in-europe-overview/">
+                <img src="img/landscape.jpg"></a>
+            </div>
         </div>
-        <div class="panel-body">
-            <a href="http://www.cendari.eu/description-of-work/project-information-resources/the-digital-humanities-landscape-in-europe-overview/"><img src="img/landscape.jpg" /></a>
-        </div>
-    </div
-</div>    
-<div id="ThankYou" class="step slide" data-x="0" data-y="5000" data-z="0"> 
+    </div>
+    <div class="step slide" data-x="0" data-y="5000" data-z="0" id=
+    "ThankYou">
         <h1>Thank You.</h1>
-        <p><em>This research is supported by the <a href="www.sfi.ie">Science Foundation Ireland</a> (Grant 12/CE/I2267) as part of the <a href="http://www.cngl.ie">Centre for Next Generation Localisation</a> at <a href="http://www.tcd.ie">Trinity College Dublin.</a></em></p> 
-        <p style="font-size:16px">Built with <a href="http://bartaz.github.io/impress.js/#/bored">impress.js</a>, hosted on <a href="http://github.io">github.io</a></p>
-</div>
-    <!-- overview slide -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        <p><em>This research is supported by the <a href=
+                "www.sfi.ie">Science Foundation Ireland</a> (Grant 12/CE/I2267) <br />as
+        part of the <a href="http://www.cngl.ie">Centre for Next Generation
+        Localisation</a> at <a href="http://www.tcd.ie">Trinity College
+        Dublin.</a></em></p>
+
+        <p>Built with <a href=
+        "http://bartaz.github.io/impress.js/#/bored">impress.js</a>, google fonts and bootflat.</p>
+            
+        <p>Hosted on <a href="http://github.io">github.io</a></p>
+    </div>
+        
+        <!-- overview slide -->
+
+        <div class="step" data-scale="10" data-x="3000" data-y="1500" id=
+        "overview"></div>
     </div>
 
-</div>
-<div id="header" style="position:absolute; height: 10px; border-bottom: 1px solid gray; top: 0; left: 0;">
-    <p id="timer">00</p> 
-</div>
-<!--
+    <div id="header" style=
+    "position:absolute; height: 10px; top: 0; left: 0; color:#ccc">
+        <p id="timer">00</p>
+    </div><!--
     
     Last, but not least.
     
@@ -315,12 +579,12 @@
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
-<script type="text/javascript">
+    <script src="js/impress.js"></script><script>
+impress().init();
+    </script><script type="text/javascript">
 ////////////////////////// Timer Scripting //////////
-//http://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer
-function timer(time,update) {
+    //http://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer
+    function timer(time,update) {
     var start = new Date().getTime();
     var interval = setInterval(function() {
         var now = time-(new Date().getTime()-start);
@@ -329,8 +593,8 @@ function timer(time,update) {
         }
         else update(Math.floor(now/1000));
     },500); // the smaller this number, the more accurate the timer will be
-}
-timer(
+    }
+    timer(
     900000, // milliseconds SET TALK TIME HERE
     function(timeleft) { // called every step to update the visible countdown
         hours = timeleft / 3600;
@@ -338,20 +602,17 @@ timer(
         sec = timeleft  % 60;
         document.getElementById('timer').innerHTML = Math.floor(hours) + ":" + Math.floor(mins) + ":" + sec;
     }
-); 
-</script>
-<!--Google -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ); 
+    </script><!--Google -->
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-42609614-1', 'oconnoat.github.io');
-  ga('send', 'pageview');
+    ga('create', 'UA-42609614-1', 'oconnoat.github.io');
+    ga('send', 'pageview');
 
-</script>
+    </script>
 </body>
 </html>
-
-
