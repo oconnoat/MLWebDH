@@ -8,24 +8,28 @@ Impress, bootflat, d3
     * Holdings
     * Collection vs. Item Level
     * format / media
+        * Example: Cultura 1641 / IPSA
 
 #Metadata
     * Why Mark up?
     * What gets marked up?
 
     * Bibliographic Standards: MODS, MARC21
-    * Texh Encoding Initiative: TEI
+    * Text Encoding Initiative: TEI
+    * OAI-PMH
+        * Relationship to linguistic standards
+
+    * Example: Cendari Ingestion, Research Guide Workflow, Green Cadres
 
 #Knowledge
-    *EDM
-    *VIAF
+    * EDM
+    * VIAF
+
+    * Example: TRAME
 
 #Language
     * Content Language
     * Encoding
 
-#Examples
-    * Manuscriptorum
-    * CULTURA
-    * Cendari Ingestion
-
+#Landscape
+    *
