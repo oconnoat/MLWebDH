@@ -1,4 +1,0 @@
-* change to list-group and list-group-item instead of ul/li
-* change to col-md-6 from width=50% etc
-* add links to http://bootflat.github.io/ and https://www.google.com/fonts
-* fix tags!

@@ -11,6 +11,9 @@ h3.panel-title{
     font-size: 200%;
 }
 
+/* make the non-active steps transparent */
+            .step:not(.active) { opacity: 0.33; }
+
 blockquote{
     margin: 2%;
     font-size: 200%;
@@ -38,10 +41,34 @@ li {
     background-width: 100%;
     
 }
-
+.impress-on-Data, .impress-on-Markup, .impress-on-Knowledge{
+    background: url(../img/gallery.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+    
+}
+.impress-on-Standards, .impress-on-Language, .impress-on-Infrastructure{
+    background: url(../img/controlroom.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+    
+}
+.impress-on-ThankYou {
+    background: url(../img/thankyou.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+} 
 /* classes */
 div.step{
-    background-color: #fff;
 }
 div.panel-heading {
     padding-top: 0.1em;
@@ -58,6 +85,11 @@ div.floater img{
 }
 
 #ThankYou {
+    color: #FFF;
     text-align: justify;
     line-height: 150%;
+}
+#isit{
+    text-align:center;
+    
 }

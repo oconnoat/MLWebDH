@@ -56,7 +56,7 @@
     -->
 
     <div id="impress">
-        <div class="step slide" data-x="0" data-y="0" id="title">
+        <div class="step slide" data-x="-1000" data-y="0" id="title">
             <h1>Marking Up Our Virtue</h1>
 
             <h2>Multilingual Standards and Practices in the Digital
@@ -92,17 +92,19 @@
                 </div>
 
                 <div class="panel-body">
-                    <h3>Is it Digital Humanities if I emailed it as a PDF?</h3>
+                    <h3 id="isit">Is it Digital Humanities if I emailed it as a PDF?</h3>
                     <div class="floater">
-                        <ul>
-                        <li>Source<a href=
-                            "https://github.com/dhtaxonomy/TaDiRAH">TaDiRAH</a></li>
+                        <h3>Verbs</h3>
+                    <p>Source: <a href=
+                            "https://github.com/dhtaxonomy/TaDiRAH">TaDiRAH</a></p>
+                    <ul>
                         <li>Capture, Creation, Enrichment</li>
                         <li>Analysis, Interpretation</li> 
                         <li>Storage, Dissemination</li>
                     </ul>
                     </div>
                     <div class="floater">
+                        <h3>Reflections</h3>
                     <ul>
                         <li><a href="http://www.digitalhumanities.org/companion/">
                             'A Companion to Digital Humanities', ed. Susan Schreibman, Ray Siemens, John Unsworth. Oxford: Blackwell, 2004
@@ -116,6 +118,8 @@
                         "http://dhdebates.gc.cuny.edu/">'Debates in the Digital Humanities', ed. Gold</a></li>
                     </ul>
                 </div>
+                <!-- Clearfix -->
+                <div style="clear: both;">&nbsp;</div>
                 </div>
             </div>
         </div>
@@ -131,11 +135,11 @@
                         Weingart's Analysis of the DH2014 Acceptances by
                         Topic:</a>
                     <ul>
-                        <li>Text Analysis</li> 
-                        <li>Literary Analysis</li>
-                        <li>Archives &amp; Repositories</li> 
-                        <li>Data Mining / Text Mining</li> 
-                        <li>Visualisation</li>
+                        <li>Text Analysis (e.g. <a href="http://journalofdigitalhumanities.org/2-1/">Topic Modelling</a>)</li> 
+                        <li>Literary Analysis (e.g. <a href="http://www.nytimes.com/2011/06/26/books/review/the-mechanic-muse-what-is-distant-reading.html?pagewanted=all&_r=0">Distant Reading</a></li>
+                        <li>Archives &amp; Repositories (e.g. <a href="http://www.euppublishing.com/doi/abs/10.3366/ijhac.2013.0081">Cendari's Grand Challenges</a></li> 
+                        <li>Data Mining / Text Mining (e.g. this <a href="http://timemapper.okfnlabs.org/muranava/history-of-computerised-corpus-tools">timeline of computerised corpus tools</a>)</li> 
+                        <li>Visualisation (e.g. <a href="http://neatline.org/">Neatline</a>) </li>
                     </ul>
                 </div>
             </div>
@@ -158,7 +162,7 @@
 
                         <li>Diaries</li>
 
-                        <li>Archaeological finds</li>
+                        <li>Archological finds</li>
 
                         <li>Secondary Sources</li>
                     </ul>
@@ -210,8 +214,8 @@
                     <ul>
                         <li>Libraries tend to deal with <strong>Items</strong></li>
                         <li>Archives tend to deal with <strong>collections</strong></li>
-                        <li>The collection, the archive or the item itself might no
-                longer exist: evidence only in metadata.</li>
+                        <li>The collection, the archive or the item itself might <a href="img/destruction.png">no
+                        longer exist</a>: evidence only in metadata.</li>
                     </ul>
             </div>
             <div>
@@ -256,6 +260,8 @@
             "https://wiki.cendari.dariah.eu/wiki/The_Fall_of_the_House_Romanov_(Demonstrator_ARG)">
             <img src="img/cendariarg.png"></a>
         </div>
+        <!--clearfix-->
+        <div style="clear: both;">&nbsp;</div>
     </div>
     </div>
 
@@ -271,7 +277,7 @@
                     <li>DBPedia: Notability in thr context of
                     crowd-sourcing?</li>
 
-                    <li>VIAF, <a href=
+                    <li><a href="http://viaf.org/">VIAF</a>, <a href=
                     "http://pro.europeana.eu/edm-documentation">EDM</a>,<a href="http://www.loc.gov/bibframe/docs/model.html">Bibframe</a></li>
 
                     <li>Feasibility of automation in archaic languages/language
@@ -282,7 +288,7 @@
     </div>
 
     <div class="step slide" data-rotate-y="90" data-x="3000" data-y="2000"
-    data-z="-1000" id="Gdansk">
+    data-z="5000" id="Gdansk">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Naming a City</h3>
@@ -490,7 +496,7 @@
         </div>
     </div><!-- Language, Standards and Infrastructure -->
 
-    <div class="step slide" data-x="1000" data-y="3000" data-z="0" id=
+    <div class="step slide" data-x="1000" data-y="2000" data-z="0" id=
     "Standards">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -513,20 +519,25 @@
         </div>
     </div>
 
-    <div class="step slide" data-x="2000" data-y="3000" data-z="0" id=
+    <div class="step slide" data-x="2000" data-y="2000" data-z="0" id=
     "Language">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">Items &amp; Collections</h3>
+                <h3 class="panel-title">Language</h3>
             </div>
 
             <div class="panel-body">
-                http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD41
+                <ul>
+                    <li><a href="http://enrich.manuscriptorium.com/index.php?q=tei-p5">The Documents can highly complex, mixing content, script and language</a> </li>
+                    <li>The Language might be a dialect, might be outmoded or complex (<a href="http://www.pepysdiary.com/encyclopedia/1199/">even at the word level</a>)</li>
+                    <li>There may be virtually no resources or tools to build from, or the corpus may be tiny or highly technical</li>
+                </ul>
+                <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAN">TEI Guidelines on Linguistic Annotation of Corpora</a>
             </div>
         </div>
     </div>
 
-    <div class="step slide" data-x="3000" data-y="3000" data-z="0" id=
+    <div class="step slide" data-x="3000" data-y="2000" data-z="0" id=
     "Infrastructure">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -536,10 +547,28 @@
             <div class="panel-body">
                 <a href=
                 "http://www.cendari.eu/description-of-work/project-information-resources/the-digital-humanities-landscape-in-europe-overview/">
-                <img src="img/landscape.jpg"></a>
+                <img src="img/landscape.jpg" alt="research landscape"></a>
             </div>
         </div>
     </div>
+     <div class="step slide" data-x="3000" data-y="3000" data-z="3000" data-rotate-x="90" id="Infrastructurelinks" >
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Research Landscape Links, mostly incomplete!</h3>
+            </div>
+
+            <div class="panel-body">
+                <ul>
+                    <li><a href="http://www.slideshare.net/alastairdunning/europeana-in-a-research-context">Dunning, Europeana in a Research Context</a></li>
+                    <li><a href="http://dariah.eu/fileadmin/Documents/Library/DARIAH-EU_Information_brochure_autumn_2013.pdf">DARIAH EU Introduction [PDF]</a></li>
+                    <li><a href="http://clarin.eu/faq-page">CLARIN FAQ</a></li>
+                    <li><a href="http://adho.org/">ADHO</a></li>
+                    <li><a href="https://oclc.org/home.en.html">OCLC</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="step slide" data-x="0" data-y="5000" data-z="0" id=
     "ThankYou">
         <h1>Thank You.</h1>
@@ -557,7 +586,7 @@
         
         <!-- overview slide -->
 
-        <div class="step" data-scale="10" data-x="3000" data-y="1500" id=
+        <div class="step" data-scale="4" data-x="2250" data-y="1000" id=
         "overview"></div>
     </div>
 
