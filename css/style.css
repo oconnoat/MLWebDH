@@ -1,5 +1,15 @@
+/* @import("http://fonts.googleapis.com/css?family=Satisfy"); */
+
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy') url('Satisfy.woff') format('woff') , local('Satisfy') url(http://themes.googleusercontent.com/static/fonts/satisfy/v4/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff'); */
+}
+
 h1 {
-    font-family: 'Satisfy', cursive;
+    margin-left 2px;
+    font-family: 'Satisfy', serif;
     font-size: 350%;
 }
 h3 {
@@ -7,7 +17,7 @@ h3 {
 }
 h3.panel-title{
     margin-left: 1%;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Satisfy', serif;
     font-size: 200%;
 }
 
