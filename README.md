@@ -32,4 +32,7 @@ Impress, bootflat, d3
     * Encoding
 
 #Landscape
-    *
+    * Europeana
+    * Dariah
+    * CLARIN
+
